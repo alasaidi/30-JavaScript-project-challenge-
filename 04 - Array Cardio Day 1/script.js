@@ -74,3 +74,15 @@ const sumup = data.reduce((obj, item) => {
   return obj; // Return the updated accumulator
 }, {});
 console.log(sumup);
+// testing calling a function in parameter
+
+const logger = (message) => {
+  console.log(message);
+};
+// const message = () => {
+//   console.log("message");
+// };
+
+logger(() => {
+  console.log("hi hi");
+});
